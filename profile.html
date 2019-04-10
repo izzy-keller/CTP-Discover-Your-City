@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Profile</title>
+<!--
+
+Template 2086 Multi Color
+
+http://www.tooplate.com/view/2086-multi-color
+
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">                
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      
+    <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/hero-slider-style.css">                              
+    <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                 
+    <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   
+
+</head>
+
+    <body>
+        <!-- Content -->
+        <div class="cd-hero">
+
+            <!-- Navigation -->        
+            <div class="cd-slider-nav">
+                <nav class="navbar">
+                    <div class="tm-navbar-bg">
+                        <img src="images/LOGOsmall2.png" style="float: left;" width="105" height="105" />
+                        <a class="navbar-brand text-uppercase" href="index.html"></i>Discover Your City</a>
+
+                        
+
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                        </button>
+                        <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item active selected">
+                                    <a class="nav-link" href="#0" data-no="1">Profile <span class="sr-only">(current)</span></a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="2">Timeline</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="3">Map</a>
+                                </li>
+
+                            </ul>
+                        </div>                        
+                    </div>
+
+                </nav>
+            </div> 
+
+            <ul class="cd-hero-slider">
+            <!-- Profile -->
+                <li class="selected">                    
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="tm-flex">
+                                        
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                            <h2 class="tm-text-title"><span class="">My Profile</span></h2>
+                                        <img src="images/profilePicture.jpeg" style="float: left; border-radius: 50%; padding: 10px" width="250" height="250" /> 
+                                        <h2 class="tm-text-title"><span class="">Isabelle Keller</span></h2>
+                                            <h3 class="tm-text-title"><span >Interests</span></h3>
+                                            <p class="tm-text"> 
+                                                Food<br>
+                                                Nightclubs<br>
+                                                Comedy
+                                            </p>    
+                                        </div>
+
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                        <h2 class="tm-text-title"><span class="">Saved locations</span></h2>
+                                         <p class="tm-text-title"><span class="">Add locations you wish to visit to your profile</span></p>
+
+<!--creating the add to list function https://memorynotfound.com/dynamically-addremove-items-list-javascript/ -->
+                                        
+                                            <input type="text" id="candidate"/>
+                                            <button onclick="addItem()">Add to list</button>
+                                            <button onclick="removeItem()">Remove from list</button>
+                                            <ul id="dynamic-list"></ul>
+                                         
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            
+                                                              
+                            </div>
+
+                        </div>                                                    
+                    </div>                    
+                </li>
+
+                <!-- Timeline  -->
+                <li>                    
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-one">
+
+                                    
+                                    <div class="tm-img-gallery-info-container">                                    
+                            
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/PGCH/playgroundCoffee.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Playground Coffee<span></span></h2>
+                                                <p class="tm-figure-description">Speciality coffee shop, craft beer and cocktail bar.</p>
+                                                <a href="PGCH.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/theApple/TheApple.png" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">The Apple<span></span></h2>
+                                                <p class="tm-figure-description">The world’s finest range of ciders & perries on a beautifully converted Dutch barge.</p>
+                                                <a href="TA.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/Doms/DCh.png" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Dom's Coffee House<span></span></h2>
+                                                <p class="tm-figure-description">Independent coffee shop in Bristol’s great city centre.</p>
+                                                <a href="DCH.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/bellyLaughs/BellyLaughs.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Belly Laughs<span></span> </h2>
+                                                <p class="tm-figure-description">Series of comedy shows in restaurants, cafes and bars across Bristol.</p>
+                                                <a href="BL.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/O2/O2Bristol.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">O2 Accademy Bristol<span></span></h2>
+                                                <p class="tm-figure-description">Host to the biggest international artists and brightest new acts and is a clubbing institution</p>
+                                                <a href="O2.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/Thekla/Thekla.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Thekla<span></span></h2>
+                                                <p class="tm-figure-description">Converted cargo ship now used as nightclub and music venue.</p>
+                                                <a href="TLA.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/smokemirrors/smokeAndMirrors.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Smoke & Mirrors<span></span> </h2>
+                                                <p class="tm-figure-description">One stop event venue, hosting 5 star Comedy & Magic shows every weekend.</p>
+                                                <a href="SM.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/bootlegger/Bootlegger.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Bootlegger <span></span></h2>
+                                                <p class="tm-figure-description">Independent business hosting music events accompanied by great cocktails</p>
+                                                <a href="BOL.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/rhubarb/cafeRhubarb.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Cafe Rhubarb<span></span> </h2>
+                                                <p class="tm-figure-description">Family run coffee shop along Gloucester Road.</p>
+                                                <a href="CR.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/SWX/SWX.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">SWX<span></span></h2>
+                                                <p class="tm-figure-description">Live music, club and events space.</p>
+                                                <a href="SWX.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/comedyBox/comedyBox.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">The Comedy Box</h2>
+                                                <p class="tm-figure-description">One of the longest running provincial comedy venues in the UK.</p>
+                                                <a href="CB.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                    <div class="grid-item">
+                                        <figure class="effect-bubba">
+                                            <img src="images/cafeKino/cafeKino.jpg" alt="Image" class="img-fluid tm-img">
+                                            <figcaption>
+                                                <h2 class="tm-figure-title">Cafe Kino </h2>
+                                                <p class="tm-figure-description">A vegan and vegetarian cafe in Bristol. Ethical, community focused cooperative with food, drinks and events.</p>
+                                                <a href="CK.html">View more</a>
+                                            </figcaption>           
+                                        </figure>
+                                    </div>  
+                                </div>                                 
+                            </div>
+                        </div>                      
+                    </div>
+                </li>
+
+
+                <!-- MAP  -->
+
+
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="3" data-page-type="gallery">                        
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-three">
+                                
+                                    
+                                    <div class="tm-img-gallery-info-container">  
+                                    <br>
+                                    <br>                                  
+                                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Progress Map</span></h2>
+                                                                            
+                                </div>
+                               <iframe class="center"width="1000" height="700" frameborder="0" src="https://widgets.scribblemaps.com/sm/?d&z&l&gc&af&sc&mc&lat=51.4699339&lng=-2.593797699999982&vz=15&type=custom_style&ti&s&width=550&height=400&id=test_discover" style="border:0; max-width: 100%;" allowfullscreen allow="geolocation" class="center"> </iframe>
+
+                                <!-- LOG IN INFO
+                                    
+                                    email: discoveryourcity@outlook.com
+                                    password: Discover2019
+                                 -->
+                                   
+                                                                                                                                    
+                                </div>                                 
+                            </div> <!-- .tm-img-gallery-container -->
+                        </div>         
+                    </div>  
+                </li>
+
+
+
+
+
+        <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+        <div id="loader-wrapper">
+            
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+        
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) --> 
+        <script src="js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+        <script src="js/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
+        <script src="js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+         <script src="script.js"></script>  <!-- Script for creating list -->
+        
+        <script>
+
+            function adjustHeightOfPage(pageNo) {
+
+                var offset = 80;
+                var pageContentHeight = 0;
+
+                var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
+
+                if( pageType != undefined && pageType == "gallery") {
+                    pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .tm-img-gallery-container").height();
+                }
+                else {
+                    pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height() + 20;
+                }
+
+                if($(window).width() >= 992) { offset = 120; }
+                else if($(window).width() < 480) { offset = 40; }
+               
+                // Get the page height
+                var totalPageHeight = $('.cd-slider-nav').height()
+                                        + pageContentHeight + offset
+                                        + $('.tm-footer').height();
+
+                // Adjust layout based on page height and window height
+                if(totalPageHeight > $(window).height()) 
+                {
+                    $('.cd-hero-slider').addClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
+                }
+                else 
+                {
+                    $('.cd-hero-slider').removeClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
+                }
+            }
+
+            /*
+                Everything is loaded including images.
+            */
+            $(window).load(function(){
+
+                adjustHeightOfPage(1); // Adjust page height
+
+				
+                /* Collapse menu after click 
+                -----------------------------------------*/
+                $('#tmNavbar a').click(function(){
+                    $('#tmNavbar').collapse('hide');
+
+                    adjustHeightOfPage($(this).data("no")); // Adjust page height       
+                });
+
+                /* Browser resized 
+                -----------------------------------------*/
+                $( window ).resize(function() {
+                    var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
+                    
+                    // wait 3 seconds
+                    setTimeout(function() {
+                        adjustHeightOfPage( currentPageNo );
+                    }, 1000);
+                    
+                });
+        
+                // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
+                $('body').addClass('loaded');
+                           
+            });
+
+        </script>            
+
+</body>
+</html>
